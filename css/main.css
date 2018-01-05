@@ -1,0 +1,69 @@
+* { /*VALORES PARA ARRANCAR EL CÓDIGO CON MARGEN & PADDING EN CERO*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid System */
+.container { /* Contenedor general */
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+ .row:after { /* Determinar valores para row */
+  content: "";
+}
+
+[class*="col-"]{ /* Valores generales para las columnas */
+  text-align: center;
+  height: 100vh;
+}
+
+.col-1{ /* Estilo general para la columna del fondo */
+  width: 100%;
+}
+
+.col-3 { /* Estilo general para la columna que ocupa el gatito */
+  margin: 0 auto;
+  width: 40%;
+  height: 90vh;
+}
+
+/******RECURSOS IMÁGENES INICIALES****+*/
+
+.kitten-img { /*gatito mediano*/
+  background-image: url('../assets/images/kitten-medium.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.landscape-img { /*background soleado*/
+  background-image: url('../assets/images/sunny-day.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******MEDIA****+*/
+
+@media screen and (max-width: 678px) { /***** TABLETA *****/
+
+  .kitten-img { /*gatito grande*/
+    background-image: url('../assets/images/kitten-large.png');
+  }
+
+  .landscape-img { /*background atardecer*/
+    background-image: url('../assets/images/dawn.png');
+  }
+}
+
+@media screen and (max-width: 375px) { /***** TABLETA *****/
+
+  .kitten-img { /*gatito pequeño*/
+    background-image: url('../assets/images/kitten-small.png');
+  }
+
+  .landscape-img { /*background noche*/
+    background-image: url('../assets/images/night.jpg');
+  }
+}

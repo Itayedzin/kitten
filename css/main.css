@@ -46,18 +46,18 @@
 
 /******MEDIA****+*/
 
-@media screen and (max-width: 678px) { /***** TABLETA *****/
+@media (max-width: 800px) { /***** TABLETA *****/
 
   .kitten-img { /*gatito grande*/
     background-image: url('../assets/images/kitten-large.png');
   }
 
   .landscape-img { /*background atardecer*/
-    background-image: url('../assets/images/night.jpg');
+    background-image: url('../assets/images/dawn.png');
   }
 }
 
-@media screen and (max-width: 400px) { /***** TABLETA *****/
+@media (max-width: 500px) { /***** TABLETA *****/
 
   .kitten-img { /*gatito pequeño*/
     background-image: url('../assets/images/kitten-small.png');

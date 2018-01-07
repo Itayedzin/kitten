@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 375px) { /***** TABLETA *****/
+@media screen and (max-width: 400px) { /***** TABLETA *****/
 
   .kitten-img { /*gatito pequeño*/
     background-image: url('../assets/images/kitten-small.png');
